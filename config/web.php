@@ -11,6 +11,24 @@ return [
             'showScriptName' => false
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'view' => [
+            'renderers' => [
+                'md' => [
+                    'class' => 'app\utilities\MarkdownRenderer'
+                ]
+            ],
+            'theme' => [
+                'class' => yii\base\Theme::classname(),
+                'basePath' => '@app/themes/snowy',
+            ]
+        ],
+        'response' => [
+            'formatters' => [
+                'yaml' => [
+                    'class' => 'app\utilities\YamlResponseFormatter'
+                ]
+            ]
+        ]
     ],
     'modules' => [
         'gii' => [

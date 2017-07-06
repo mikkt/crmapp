@@ -209,13 +209,13 @@
  <body>
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
-     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 2</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 1</a></li>
      <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: green">OK</span> (0.7s)</small></h1>
+ <h1>Codeception Results <small><span style="color: green">OK</span> (0.1s)</small></h1>
 
 
 
@@ -227,7 +227,7 @@
 </tr>   <tr class="scenarioRow scenarioSuccess">
     <td>
      <p class="scenarioSuccess" onclick="showHide('1', this)"><span class="toggle">+</span>
-          <span class="quiet">QueryCustomerByPhoneNumberCept &raquo;</span> Query the customer info using his phone number <span style="color: #34495e; font-size: 70%;">0.72s</span></p>
+          <span class="quiet">DocumentationCept &raquo;</span> See whether user documentation is accessible <span style="color: #34495e; font-size: 70%;">0.07s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -235,224 +235,34 @@
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
 
 
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/site/docs&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Documentation&quot;,&quot;h1&quot;</span></td>
+      </tr>
+
 <tr>
- <td class="stepName " ><p onclick="showHide('595e13ce22708', this)"><span class="toggle">+</span> am in add customer ui </p>
+ <td class="stepName " ><p onclick="showHide('595e2cad3560a', this)"><span class="toggle">+</span> see large body of text </p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce22708">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e2cad3560a">
           <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/customers/add&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab text from <span style="color: #732E81">&quot;p&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/customers/add&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see content is long <span style="color: #732E81">&quot;Here we'll see some Markdown code.\nIt's easier to write text documents with simple formatting this way.&quot;</span></td>
       </tr>
 
 
   </table>
  </td>
 </tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce227de', this)"><span class="toggle">+</span> fill customer data form {"CustomerRecord[name]":"Dell Walker","CustomerRecord[birth_date]":"2013-12-30","CustomerRecord[notes]":"Expedita voluptas eaque et consequatur quaerat ut debitis.","PhoneRecord[number]":"279.420....}</p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce227de">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[name]&quot;,&quot;Dell Walker&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[birth_date]&quot;,&quot;2013-12-30&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[notes]&quot;,&quot;Expedita voluptas eaque et consequatur quaerat ut debitis.&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;PhoneRecord[number]&quot;,&quot;279.420.4397 x051&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[name]&quot;,&quot;Maynard Auer&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[birth_date]&quot;,&quot;1992-07-08&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[notes]&quot;,&quot;Sequi facilis minus maiores nemo ea molestiae id totam.&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;PhoneRecord[number]&quot;,&quot;424.373.1077 x6231&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce228f1', this)"><span class="toggle">+</span> submit customer data form </p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce228f1">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Submit&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Submit&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce229c1', this)"><span class="toggle">+</span> see i am in list customers ui </p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce229c1">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url matches <span style="color: #732E81">&quot;/customers/&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url matches <span style="color: #732E81">&quot;/customers/&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url matches <span style="color: #732E81">&quot;/customers/&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce22aab', this)"><span class="toggle">+</span> am in query customer ui </p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce22aab">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/customers/query&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce22b81', this)"><span class="toggle">+</span> fill in phone field with data from {"CustomerRecord[name]":"Dell Walker","CustomerRecord[birth_date]":"2013-12-30","CustomerRecord[notes]":"Expedita voluptas eaque et consequatur quaerat ut debitis.","PhoneRecord[number]":"279.420....}</p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce22b81">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;phone_number&quot;,&quot;279.420.4397 x051&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce22c7c', this)"><span class="toggle">+</span> click search button </p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce22c7c">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Search&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce22d4b', this)"><span class="toggle">+</span> see customer in list {"CustomerRecord[name]":"Dell Walker","CustomerRecord[birth_date]":"2013-12-30","CustomerRecord[notes]":"Expedita voluptas eaque et consequatur quaerat ut debitis.","PhoneRecord[number]":"279.420....}</p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce22d4b">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Dell Walker&quot;,&quot;#search_results&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-<tr>
- <td class="stepName " ><p onclick="showHide('595e13ce22e49', this)"><span class="toggle">+</span> don't see customer in list {"CustomerRecord[name]":"Maynard Auer","CustomerRecord[birth_date]":"1992-07-08","CustomerRecord[notes]":"Sequi facilis minus maiores nemo ea molestiae id totam.","PhoneRecord[number]":"424.373.10...}</p>
-
-     </td>
-</tr>
-<tr>
- <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595e13ce22e49">
-          <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I don't see <span style="color: #732E81">&quot;Maynard Auer&quot;,&quot;#search_results&quot;</span></td>
-      </tr>
-
-
-  </table>
- </td>
-</tr>
-
-         
-         
-         
-     </table>
-
-
-    </td>
-   </tr>
-
-
-   <tr class="scenarioRow scenarioSuccess">
-    <td>
-     <p class="scenarioSuccess" onclick="showHide('2', this)"><span class="toggle">+</span>
-          <span class="quiet">SmokeTestCept &raquo;</span> See that landing page is up <span style="color: #34495e; font-size: 70%;">0.02s</span></p>
-    </td>
-   </tr>
-   <tr class="scenarioRow scenarioSuccess">
-    <td>
-     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
-
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Our CRM&quot;</span></td>
-      </tr>
-
 
          
          
@@ -472,7 +282,7 @@
       <table border="0">
        <tr>
         <td width="250" class="scenarioSuccess">Successful scenarios:</td>
-        <td class="scenarioSuccessValue"><strong>2</strong></td>
+        <td class="scenarioSuccessValue"><strong>1</strong></td>
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
