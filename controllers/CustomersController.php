@@ -1,14 +1,18 @@
 <?php
 namespace app\controllers;
+use app\models\customer\Customer;
 use app\models\customer\CustomerRecord;
+use app\models\customer\Phone;
 use app\models\customer\PhoneRecord;
+use Yii;
+use yii\data\ArrayDataProvider;
 use yii\web\Controller;
 
 class CustomersController extends Controller
 {
     public function actionIndex()
     {
-        $records = $this->getRecordsAccordingToQuery();
+        $records = $this->findRecordsByQuery();
         return $this->render('index', compact('records'));
     }
 
@@ -35,6 +39,7 @@ class CustomersController extends Controller
      * Most of this should probably be moved to the models themselves when following the 'Fat model-thin controller' design pattern.
      * For now everything will be left as-is, due to this project following the book.
      */
+
     private function store(Customer $customer)
     {
         $customer_record = new CustomerRecord();
