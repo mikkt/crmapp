@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRM</title>
+    </head>
+<body>
+    <form id="add-customer-form" action="/customers/add" method="post">
+<input type="hidden" name="_csrf" value="9YXxkCkK7SeTHL1lXKNQNHEuVknWFrhd2AOJFubbWFV-5FAMu9U4AJZtF1xBVj0mQF8TjIJH2TYYaWATUK7Upw=="><div class="error-summary" style="display:none"><p>Please fix the following errors:</p><ul></ul></div><div class="form-group field-customerrecord-name required">
+<label class="control-label" for="customerrecord-name">Name</label>
+<input type="text" id="customerrecord-name" class="form-control" name="CustomerRecord[name]" aria-required="true">
+
+<div class="help-block"></div>
+</div><div class="form-group field-customerrecord-birth_date">
+<label class="control-label" for="customerrecord-birth_date">Birth Date</label>
+<input type="text" id="customerrecord-birth_date" class="form-control" name="CustomerRecord[birth_date]">
+
+<div class="help-block"></div>
+</div><div class="form-group field-customerrecord-notes">
+<label class="control-label" for="customerrecord-notes">Notes</label>
+<input type="text" id="customerrecord-notes" class="form-control" name="CustomerRecord[notes]">
+
+<div class="help-block"></div>
+</div><div class="form-group field-phonerecord-number required">
+<label class="control-label" for="phonerecord-number">Number</label>
+<input type="text" id="phonerecord-number" class="form-control" name="PhoneRecord[number]" aria-required="true">
+
+<div class="help-block"></div>
+</div><button type="submit" class="btn btn-primary">Submit</button></form><script src="/assets/6dc4eb2f/jquery.js"></script>
+<script src="/assets/2fcdda20/yii.js"></script>
+<script src="/assets/2fcdda20/yii.validation.js"></script>
+<script src="/assets/2fcdda20/yii.activeForm.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#add-customer-form').yiiActiveForm([{"id":"customerrecord-name","name":"name","container":".field-customerrecord-name","input":"#customerrecord-name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Name cannot be blank."});yii.validation.string(value, messages, {"message":"Name must be a string.","max":256,"tooLong":"Name should contain at most 256 characters.","skipOnEmpty":1});}},{"id":"phonerecord-number","name":"number","container":".field-phonerecord-number","input":"#phonerecord-number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Number must be a string.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Number cannot be blank."});}}], []);
+});</script></body>
+</html>
