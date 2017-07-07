@@ -1,8 +1,11 @@
 <?php
 namespace Step\Acceptance;
 
-class CRMUserManagementSteps extends \AcceptanceTester
+class CRMUserManagementSteps extends CRMGuestSteps
 {
+    public $username = 'RobAdmin';
+    public $password = 'Imitate #14th syndrome of apathy';
+
     public function amInListUsersUi()
     {
         $I = $this;

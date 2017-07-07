@@ -1,12 +1,35 @@
 <?php
 namespace app\controllers;
 
+use yii\filters\AccessControl;
 use \yii\web\Controller;
 use app\models\user\LoginForm;
 use Yii;
 
 class SiteController extends Controller
 {
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['login', 'logout'],
+                'rules' => [
+                    [
+                        'actions' => ['login'],
+                        'roles' => ['?'],
+                        'allow' => true,
+                    ],
+                    [
+                        'actions' => ['logout'],
+                        'roles' => ['@'],
+                        'allow' => true,
+                    ]
+                ]
+            ]
+        ];
+    }
+
     public function actionIndex()
     {
         return $this->render('homepage');
@@ -19,7 +42,7 @@ class SiteController extends Controller
 
     public function actionLogin()
     {
-        if (!\Yii::$app->user->isGuest)
+        if (!Yii::$app->user->isGuest)
         {
             return $this->goHome();
         }
@@ -36,5 +59,12 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
         return $this->goHome();
+    }
+
+    public function beforeAction($action)
+    {
+        $parentAllowed = parent::beforeAction($action);
+        $meAllowed = !Yii::$app->user->isGuest;
+        return $parentAllowed and $meAllowed;
     }
 }
