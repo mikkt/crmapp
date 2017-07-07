@@ -28,6 +28,9 @@ return [
                     'class' => 'app\utilities\YamlResponseFormatter'
                 ]
             ]
+        ],
+        'user' => [
+            'identityClass' => 'app\models\user\UserRecord'
         ]
     ],
     'modules' => [
