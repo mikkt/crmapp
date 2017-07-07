@@ -27,9 +27,9 @@ $I->seeIAmAtHomepage();
 $I->dontSeeLink('login');
 $I->seeUsername($user);
 $I->seeLink('logout');
+$I->logout();
 
 $I->seeIAmAtHomepage();
 $I->dontSeeUsername($user);
 $I->dontSeeLink('logout');
 $I->seeLink('login');
-$I->logout();

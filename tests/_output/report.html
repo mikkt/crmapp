@@ -209,13 +209,13 @@
  <body>
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
-     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 3</a></li>
-     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 4</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 6</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 1</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (0.2s)</small></h1>
+ <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (11.4s)</small></h1>
 
 
 
@@ -246,31 +246,71 @@
    </tr>
 
 
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioFailed" onclick="showHide('2', this)"><span class="toggle">+</span>
-          <span class="quiet">DocumentationCept &raquo;</span> See whether user documentation is accessible <span style="color: #34495e; font-size: 70%;">0.06s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('2', this)"><span class="toggle">+</span>
+          <span class="quiet">DocumentationCept &raquo;</span> See whether user documentation is accessible <span style="color: #34495e; font-size: 70%;">1.86s</span></p>
     </td>
    </tr>
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer2">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
 
 
 <tr>
- <td class="stepName " ><p onclick="showHide('595f67af41147', this)"><span class="toggle">+</span> __construct "Codeception\\Scenario"</p>
+ <td class="stepName " ><p onclick="showHide('595f78876f2cf', this)"><span class="toggle">+</span> __construct "Codeception\\Scenario"</p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f67af41147">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f78876f2cf">
           <tr>
        <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/site/login&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;JoeUser&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;JoeUser&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[password]&quot;,&quot;7 wonder @ American soil&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Login&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/site/docs&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Documentation&quot;,&quot;h1&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f78876f577', this)"><span class="toggle">+</span> see large body of text </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f78876f577">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I grab text from <span style="color: #732E81">&quot;p&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see content is long <span style="color: #732E81">&quot;Here we'll see some Markdown code.\nIt's easier to write text documents with simple formatting this way.&quot;</span></td>
       </tr>
 
 
@@ -278,14 +318,9 @@
  </td>
 </tr>
 
-         <tr >
-    <td class="error">
-        Form field by Label or CSS element with 'LoginForm[username]' was not found.
-    </td>
-</tr>
-
          
-         <tr><td class='error'>See <a href='DocumentationCept.fail.html' target='_blank'>HTML snapshot</a> of a failed page</td></tr>
+         
+         
      </table>
 
 
@@ -318,7 +353,7 @@
    <tr class="scenarioRow scenarioFailed">
     <td>
      <p class="scenarioFailed" onclick="showHide('4', this)"><span class="toggle">+</span>
-          <span class="quiet">LoginAndLogoutCept &raquo;</span> Check that login and logout work <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+          <span class="quiet">LoginAndLogoutCept &raquo;</span> Check that login and logout work <span style="color: #34495e; font-size: 70%;">4.91s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioFailed">
@@ -327,29 +362,269 @@
 
 
 <tr>
- <td class="stepName " ><p onclick="showHide('595f67af4a5e3', this)"><span class="toggle">+</span> __construct "Codeception\\Scenario"</p>
+ <td class="stepName " ><p onclick="showHide('595f788c5cd24', this)"><span class="toggle">+</span> __construct "Codeception\\Scenario"</p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f67af4a5e3">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5cd24">
           <tr>
        <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/site/login&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;RobAdmin&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;RobAdmin&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[password]&quot;,&quot;Imitate #14th syndrome of apathy&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Login&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/&quot;</span></td>
       </tr>
 
 
   </table>
  </td>
 </tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;<strong>I am going to Register new User</strong></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/users/&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5cfea', this)"><span class="toggle">+</span> am in list users ui </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5cfea">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/users/&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d0da', this)"><span class="toggle">+</span> click on register new user button </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d0da">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Create User Record&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d1bc', this)"><span class="toggle">+</span> see i am in add user ui </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d1bc">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/users/create&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d28a', this)"><span class="toggle">+</span> fill user data form {"UserRecord[username]":"enos12","UserRecord[password]":"p$k{l+4V|$*9}]L"}</p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d28a">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;UserRecord[username]&quot;,&quot;enos12&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;UserRecord[password]&quot;,&quot;p$k{l+4V|$*9}]L&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d373', this)"><span class="toggle">+</span> submit user data form </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d373">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Create&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d450', this)"><span class="toggle">+</span> logout </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d450">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;logout&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;logout&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;<strong>I am going to login</strong></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see link <span style="color: #732E81">&quot;login&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;login&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d7b3', this)"><span class="toggle">+</span> see i am in login form ui </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d7b3">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/site/login&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d8c6', this)"><span class="toggle">+</span> fill login form {"UserRecord[username]":"enos12","UserRecord[password]":"p$k{l+4V|$*9}]L"}</p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d8c6">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;enos12&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[password]&quot;,&quot;p$k{l+4V|$*9}]L&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5d9cc', this)"><span class="toggle">+</span> submit login form </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5d9cc">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;button[type=submit]&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5dace', this)"><span class="toggle">+</span> see i am at homepage </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5dace">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I don't see link <span style="color: #732E81">&quot;login&quot;</span></td>
+      </tr>
+
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f788c5dcfa', this)"><span class="toggle">+</span> see username {"UserRecord[username]":"enos12","UserRecord[password]":"p$k{l+4V|$*9}]L"}</p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f788c5dcfa">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;enos12&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see link <span style="color: #732E81">&quot;logout&quot;</span></td>
+      </tr>
+
 
          <tr >
     <td class="error">
-        Form field by Label or CSS element with 'LoginForm[username]' was not found.
+        Failed asserting that two strings are equal.
     </td>
 </tr>
 
@@ -362,31 +637,271 @@
    </tr>
 
 
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioFailed" onclick="showHide('5', this)"><span class="toggle">+</span>
-          <span class="quiet">QueryCustomerByPhoneNumberCept &raquo;</span> Add two different customers to the database <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('5', this)"><span class="toggle">+</span>
+          <span class="quiet">QueryCustomerByPhoneNumberCept &raquo;</span> Query the customer info using his phone number <span style="color: #34495e; font-size: 70%;">4.57s</span></p>
     </td>
    </tr>
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer5">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
 
 
 <tr>
- <td class="stepName " ><p onclick="showHide('595f67af53403', this)"><span class="toggle">+</span> __construct "Codeception\\Scenario"</p>
+ <td class="stepName " ><p onclick="showHide('595f7890ebd69', this)"><span class="toggle">+</span> __construct "Codeception\\Scenario"</p>
 
      </td>
 </tr>
 <tr>
  <td class="nostyle">
-  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f67af53403">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ebd69">
           <tr>
        <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/site/login&quot;</span></td>
       </tr>
 
       <tr>
-       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;AnnieManager&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;AnnieManager&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[password]&quot;,&quot;Shiny 3 things hmm, vulnerable&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Login&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/site/login&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[username]&quot;,&quot;JoeUser&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;LoginForm[password]&quot;,&quot;7 wonder @ American soil&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Login&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url equals <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ebe62', this)"><span class="toggle">+</span> am in add customer ui </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ebe62">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/customers/add&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/customers/add&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ebf23', this)"><span class="toggle">+</span> fill customer data form {"CustomerRecord[name]":"London Lemke","CustomerRecord[birth_date]":"1999-12-09","CustomerRecord[notes]":"Voluptas nobis impedit odit aperiam sit quia alias unde ut blanditiis.","PhoneRecord[numbe...}</p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ebf23">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[name]&quot;,&quot;London Lemke&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[birth_date]&quot;,&quot;1999-12-09&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[notes]&quot;,&quot;Voluptas nobis impedit odit aperiam sit quia alias unde ut blanditiis.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;PhoneRecord[number]&quot;,&quot;1-719-585-0533 x407&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[name]&quot;,&quot;Annabell Ullrich&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[birth_date]&quot;,&quot;1989-04-01&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;CustomerRecord[notes]&quot;,&quot;Possimus ex inventore est temporibus sed ut sed quisquam nulla.&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;PhoneRecord[number]&quot;,&quot;+1.494.473.8741&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec02b', this)"><span class="toggle">+</span> submit customer data form </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec02b">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Submit&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Submit&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec0ec', this)"><span class="toggle">+</span> see i am in list customers ui </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec0ec">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url matches <span style="color: #732E81">&quot;/customers/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url matches <span style="color: #732E81">&quot;/customers/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see current url matches <span style="color: #732E81">&quot;/customers/&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec1c3', this)"><span class="toggle">+</span> logout </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec1c3">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;logout&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec293', this)"><span class="toggle">+</span> am in query customer ui </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec293">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/customers/query&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec34d', this)"><span class="toggle">+</span> fill in phone field with data from {"CustomerRecord[name]":"London Lemke","CustomerRecord[birth_date]":"1999-12-09","CustomerRecord[notes]":"Voluptas nobis impedit odit aperiam sit quia alias unde ut blanditiis.","PhoneRecord[numbe...}</p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec34d">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;phone_number&quot;,&quot;1-719-585-0533 x407&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec439', this)"><span class="toggle">+</span> click search button </p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec439">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Search&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec4fb', this)"><span class="toggle">+</span> see customer in list {"CustomerRecord[name]":"London Lemke","CustomerRecord[birth_date]":"1999-12-09","CustomerRecord[notes]":"Voluptas nobis impedit odit aperiam sit quia alias unde ut blanditiis.","PhoneRecord[numbe...}</p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec4fb">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;London Lemke&quot;,&quot;#search_results&quot;</span></td>
+      </tr>
+
+
+  </table>
+ </td>
+</tr>
+<tr>
+ <td class="stepName " ><p onclick="showHide('595f7890ec5e7', this)"><span class="toggle">+</span> don't see customer in list {"CustomerRecord[name]":"Annabell Ullrich","CustomerRecord[birth_date]":"1989-04-01","CustomerRecord[notes]":"Possimus ex inventore est temporibus sed ut sed quisquam nulla.","PhoneRecord[number]"...}</p>
+
+     </td>
+</tr>
+<tr>
+ <td class="nostyle">
+  <table border="0" width="100%" class="substeps scenarioStepsTable" id="stepContainer595f7890ec5e7">
+          <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I don't see <span style="color: #732E81">&quot;Annabell Ullrich&quot;,&quot;#search_results&quot;</span></td>
       </tr>
 
 
@@ -394,14 +909,9 @@
  </td>
 </tr>
 
-         <tr >
-    <td class="error">
-        Form field by Label or CSS element with 'LoginForm[username]' was not found.
-    </td>
-</tr>
-
          
-         <tr><td class='error'>See <a href='QueryCustomerByPhoneNumberCept.fail.html' target='_blank'>HTML snapshot</a> of a failed page</td></tr>
+         
+         
      </table>
 
 
@@ -409,15 +919,15 @@
    </tr>
 
 
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioFailed" onclick="showHide('6', this)"><span class="toggle">+</span>
-          <span class="quiet">SmokeTestCept &raquo;</span> See that landing page is up <span style="color: #34495e; font-size: 70%;">0.03s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('6', this)"><span class="toggle">+</span>
+          <span class="quiet">SmokeTestCept &raquo;</span> See that landing page is up <span style="color: #34495e; font-size: 70%;">0.04s</span></p>
     </td>
    </tr>
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer6">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer6">
 
 
       <tr>
@@ -425,20 +935,13 @@
       </tr>
 
       <tr>
-       <td class="stepName failedStep">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Our CRM&quot;</span></td>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Our CRM&quot;</span></td>
       </tr>
 
 
-         <tr >
-    <td class="error">
-        Failed asserting that  on page /<br />
---&gt; <br />
---&gt; contains &quot;our crm&quot;.
-    </td>
-</tr>
-
          
-         <tr><td class='error'>See <a href='SmokeTestCept.fail.html' target='_blank'>HTML snapshot</a> of a failed page</td></tr>
+         
+         
      </table>
 
 
@@ -476,11 +979,11 @@
       <table border="0">
        <tr>
         <td width="250" class="scenarioSuccess">Successful scenarios:</td>
-        <td class="scenarioSuccessValue"><strong>3</strong></td>
+        <td class="scenarioSuccessValue"><strong>6</strong></td>
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
-        <td class="scenarioFailedValue"><strong>4</strong></td>
+        <td class="scenarioFailedValue"><strong>1</strong></td>
        </tr>
        <tr>
         <td class="scenarioSkipped">Skipped scenarios:</td>

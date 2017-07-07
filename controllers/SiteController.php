@@ -8,6 +8,7 @@ use Yii;
 
 class SiteController extends Controller
 {
+
     public function behaviors()
     {
         return [
@@ -16,17 +17,17 @@ class SiteController extends Controller
                 'only' => ['login', 'logout'],
                 'rules' => [
                     [
-                        'actions' => ['login'],
-                        'roles' => ['?'],
                         'allow' => true,
+                        'actions' => ['login'],
+                        'roles' => ['guest'],
                     ],
                     [
-                        'actions' => ['logout'],
-                        'roles' => ['@'],
                         'allow' => true,
-                    ]
-                ]
-            ]
+                        'actions' => ['logout'],
+                        'roles' => ['user'],
+                    ],
+                ],
+            ],
         ];
     }
 
@@ -61,10 +62,10 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    public function beforeAction($action)
+    /*public function beforeAction($action)
     {
         $parentAllowed = parent::beforeAction($action);
         $meAllowed = !Yii::$app->user->isGuest;
         return $parentAllowed and $meAllowed;
-    }
+    }*/
 }

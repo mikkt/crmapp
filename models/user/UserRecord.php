@@ -3,6 +3,7 @@
 namespace app\models\user;
 
 use Yii;
+use yii\base\NotSupportedException;
 
 /**
  * This is the model class for table "user".
