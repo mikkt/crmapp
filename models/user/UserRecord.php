@@ -11,7 +11,7 @@ use Yii;
  * @property string $username
  * @property string $password
  */
-class UserRecord extends \yii\db\ActiveRecord implements yii\web\IdentityInterface
+class UserRecord extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
     /**
      * @inheritdoc
@@ -85,4 +85,6 @@ class UserRecord extends \yii\db\ActiveRecord implements yii\web\IdentityInterfa
     {
         throw new NotSupportedException('You can only login by username/password pair for now');
     }
+
+
 }
