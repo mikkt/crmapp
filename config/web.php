@@ -41,6 +41,14 @@ return [
         'gii' => [
             'class' => 'yii\gii\Module',
             'allowedIPs' => ['*']
+        ],
+        'firstlevel' => [
+            'class' => 'app\utilities\FirstModule',
+            'modules' => [
+                'secondlevel' => [
+                    'class' => 'app\utilities\SecondModule',
+                ]
+            ]
         ]
     ],
     'extensions' => require(__DIR__ . '/../vendor/yiisoft/extensions.php')
