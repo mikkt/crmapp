@@ -10,11 +10,8 @@ modules:
     enabled:
         # add a framework module here
         - \Helper\Functional
-        - \db\Connection
-
-    config:
-        db:
-          dsn: 'mysql:host=localhost;dbname=crmapp'
-          user: 'root'
-          password: ''
-          dump: tests/_data/dump.sql
+        - Db:
+            dsn: 'mysql:host=localhost;dbname=crmapp'
+            user: 'root'
+            password: ''
+            dump: tests/_data/dump.sql
