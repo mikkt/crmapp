@@ -41,7 +41,11 @@ return [
         'gii' => [
             'class' => 'yii\gii\Module',
             'allowedIPs' => ['*']
+        ],
+        'debug' => [
+            'class' => 'yii\debug\Module',
         ]
     ],
-    'extensions' => require(__DIR__ . '/../vendor/yiisoft/extensions.php')
+    'extensions' => require(__DIR__ . '/../vendor/yiisoft/extensions.php'),
+    'bootstrap' => ['debug'],
 ];
