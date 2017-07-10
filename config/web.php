@@ -35,7 +35,16 @@ return [
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
             'defaultRoles' => ['guest'],
-        ]
+        ],
+        /*'cache' => [
+            'class' => 'yii\redis\Cache',
+            'redis' => [
+                'class' => 'yii\redis\Connection',
+                'hostname' => 'localhost',
+                'port' => '8080',
+                'database' => '0',
+            ]
+        ],*/
     ],
     'modules' => [
         'gii' => [
