@@ -14,7 +14,7 @@ modules:
 
     config:
         db:
-          dsn: 'mysql:host=localhost;dbname=crmapp'
+          dsn: 'mysql:host=localhost:8080;dbname=crmapp'
           user: 'root'
           password: ''
           dump: tests/_data/dump.sql

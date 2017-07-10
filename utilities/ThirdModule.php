@@ -2,7 +2,7 @@
 namespace app\utilities;
 use yii\base\Module;
 
-class SecondModule extends Module
+class ThirdModule extends Module
 {
     public $controllerNamespace = 'app\controllers';
 }

@@ -49,7 +49,14 @@ return [
                     'class' => 'app\utilities\SecondModule',
                 ]
             ]
+        ],
+        'debug' => [
+            'class' => 'yii\debug\Module',
+        ],
+        'api' => [
+            'class' => 'app\api\ApiModule',
         ]
     ],
-    'extensions' => require(__DIR__ . '/../vendor/yiisoft/extensions.php')
+    'extensions' => require(__DIR__ . '/../vendor/yiisoft/extensions.php'),
+    'bootstrap' => ['debug'],
 ];
