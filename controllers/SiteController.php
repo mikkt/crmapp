@@ -14,18 +14,18 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['login', 'logout'],
+                'only' => ['login', /*'logout'*/],
                 'rules' => [
                     [
                         'allow' => true,
                         'actions' => ['login'],
                         'roles' => ['guest'],
                     ],
-                    [
+                    /*[
                         'allow' => true,
                         'actions' => ['logout'],
-                        'roles' => ['user'],
-                    ],
+                        'roles' => ['user', 'manager', 'admin'],
+                    ],*/
                 ],
             ],
         ];
@@ -62,10 +62,13 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    /*public function beforeAction($action)
+    /*
+    public function beforeAction($action)
     {
         $parentAllowed = parent::beforeAction($action);
         $meAllowed = !Yii::$app->user->isGuest;
         return $parentAllowed and $meAllowed;
-    }*/
+
+    }
+    */
 }
