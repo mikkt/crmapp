@@ -10,7 +10,7 @@ class m170705_103139_init_phone_table extends Migration
             'phone',
             [
                 'id' => 'pk',
-                'customer_id' => 'int unique',
+                'customer_id' => 'int',
                 'number' => 'string',
             ],
             'ENGINE=InnoDB'
