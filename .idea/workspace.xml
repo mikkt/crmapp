@@ -2,70 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f4e0d2d-807d-4910-ba12-8dd7befc12e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/AuditColumnAssetsBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/audit-column/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/audit-column/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utilities/AuditColumn.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596363a1c4e70.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596363bcc341d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596363c326537.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596363c6f0723.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636afb8e9b0.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636b000d76b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636b20369ab.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636b2461179.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636b2ba3cc6.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636c73c01f2.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636c933f00e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636d4193bc1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636d43228ad.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636d6a3c234.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636d8532339.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636d8aed987.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636d9dd36eb.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636e4314fb1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636f14890ed.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636f1c9aaf8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636f207fbbe.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59636f23f073b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59637090a01fb.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370aeb2091.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370b38a231.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370b6c8b09.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370b708a0b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370d778299.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370d9f2f6a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370dba7ff1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370dd90c85.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370dede971.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370e1332e2.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596370ef427e1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963711018675.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963714d3edb9.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963718b725f3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596372911e74b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596372b35c745.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596373aa9eccf.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963771c40a17.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963771db60c3.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963772046cf5.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596377466c56d.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963774693ec1.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963774daca4b.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963775f2d151.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963775f4d73e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/596377746a57a.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59637777ac86f.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963777a36ba7.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963777b86c78.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/5963777e4437c.data" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utilities/UsernameUrlRule.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648aa9a7b42.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648aa9ec45e.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648aaa27d39.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648aaa578d9.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648aaa8e522.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648aaab9233.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648b2ee11bb.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648b2f962a2.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648b2fcc7f0.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648b300c151.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/debug/59648b303e6b8.data" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/ApplicationUiAssetBundle.php" afterPath="$PROJECT_DIR$/assets/ApplicationUiAssetBundle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/migrations/m170705_103139_init_phone_table.php" afterPath="$PROJECT_DIR$/migrations/m170705_103139_init_phone_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/customer/AddressRecord.php" afterPath="$PROJECT_DIR$/models/customer/AddressRecord.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/customer/CustomerRecordSearch.php" afterPath="$PROJECT_DIR$/models/customer/CustomerRecordSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/web.php" afterPath="$PROJECT_DIR$/config/web.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/debug/index.data" afterPath="$PROJECT_DIR$/runtime/debug/index.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer-records/index.php" afterPath="$PROJECT_DIR$/views/customer-records/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,12 +54,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerRecordSearch.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerRecordSearch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/customer/CustomerRecordSearch.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-65">
               <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsernameUrlRule.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utilities/UsernameUrlRule.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <element signature="e#32#63#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/assets/ui/css/main.css" />
         <option value="$PROJECT_DIR$/views/site/login.php" />
         <option value="$PROJECT_DIR$/migrations/m170707_091845_add_predefined_users.php" />
@@ -151,7 +123,6 @@
         <option value="$PROJECT_DIR$/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/tests/acceptance/LoginAndLogoutCept.php" />
         <option value="$PROJECT_DIR$/config/db.php" />
-        <option value="$PROJECT_DIR$/config/web.php" />
         <option value="$PROJECT_DIR$/assets/AllAsset.php" />
         <option value="$PROJECT_DIR$/assets/compression/config.php" />
         <option value="$PROJECT_DIR$/tests/functional.suite.yml" />
@@ -180,6 +151,8 @@
         <option value="$PROJECT_DIR$/models/customer/EmailRecord.php" />
         <option value="$PROJECT_DIR$/views/customer-records/index.php" />
         <option value="$PROJECT_DIR$/models/customer/CustomerRecordSearch.php" />
+        <option value="$PROJECT_DIR$/config/web.php" />
+        <option value="$PROJECT_DIR$/utilities/UsernameUrlRule.php" />
       </list>
     </option>
   </component>
@@ -346,6 +319,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crmapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crmapp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -479,12 +466,12 @@
       <workItem from="1499320141481" duration="6455000" />
       <workItem from="1499327390103" duration="15844000" />
       <workItem from="1499406438249" duration="21661000" />
-      <workItem from="1499751576515" duration="10069000" />
+      <workItem from="1499751576515" duration="11557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82520000" />
+    <option name="totallyTimeSpent" value="84008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -520,13 +507,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-318">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/acceptance/LoginAndLogoutCept.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -545,13 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -908,6 +881,24 @@
         <state relative-caret-position="-65">
           <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/UsernameUrlRule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="e#32#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
